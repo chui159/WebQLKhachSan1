@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "dinerize-icons";
+  src: url("assets/fonts/ui-icons/dinerize-icons.ttf?ajynnd") format("truetype"),
+    url("assets/fonts/ui-icons/dinerize-icons.woff?ajynnd") format("woff"),
+    url("assets/fonts/ui-icons/dinerize-icons.svg?ajynnd#dinerize-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="dinerize-"],
+[class*=" dinerize-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "dinerize-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dinerize-yelp:before {
+  content: "\e918";
+}
+.dinerize-twitter:before {
+  content: "\f099";
+}
+.dinerize-facebook:before {
+  content: "\f09a";
+}
+.dinerize-github:before {
+  content: "\f09b";
+}
+.dinerize-viber:before {
+  content: "\f0bb";
+}
+.dinerize-facebook-messenger:before {
+  content: "\f0bc";
+}
+.dinerize-line:before {
+  content: "\f0bd";
+}
+.dinerize-pinterest:before {
+  content: "\f0d2";
+}
+.dinerize-linkedin:before {
+  content: "\f0e1";
+}
+.dinerize-youtube:before {
+  content: "\f167";
+}
+.dinerize-xing:before {
+  content: "\f168";
+}
+.dinerize-dropbox:before {
+  content: "\f16b";
+}
+.dinerize-stackoverflow:before {
+  content: "\f16c";
+}
+.dinerize-instagram:before {
+  content: "\f16d";
+}
+.dinerize-flickr:before {
+  content: "\f16e";
+}
+.dinerize-bitbucket:before {
+  content: "\f171";
+}
+.dinerize-tumblr:before {
+  content: "\f173";
+}
+.dinerize-apple:before {
+  content: "\f179";
+}
+.dinerize-windows:before {
+  content: "\f17a";
+}
+.dinerize-android:before {
+  content: "\f17b";
+}
+.dinerize-dribbble:before {
+  content: "\f17d";
+}
+.dinerize-skype:before {
+  content: "\f17e";
+}
+.dinerize-foursquare:before {
+  content: "\f180";
+}
+.dinerize-trello:before {
+  content: "\f181";
+}
+.dinerize-vkontakte:before {
+  content: "\f189";
+}
+.dinerize-vimeo:before {
+  content: "\f194";
+}
+.dinerize-slack:before {
+  content: "\f198";
+}
+.dinerize-reddit:before {
+  content: "\f1a1";
+}
+.dinerize-stumbleupon:before {
+  content: "\f1a4";
+}
+.dinerize-delicious:before {
+  content: "\f1a5";
+}
+.dinerize-digg:before {
+  content: "\f1a6";
+}
+.dinerize-behance:before {
+  content: "\f1b4";
+}
+.dinerize-spotify:before {
+  content: "\f1bc";
+}
+.dinerize-soundcloud:before {
+  content: "\f1be";
+}
+.dinerize-codeopen:before {
+  content: "\f1cb";
+}
+.dinerize-git:before {
+  content: "\f1d3";
+}
+.dinerize-slideshare:before {
+  content: "\f1e7";
+}
+.dinerize-twitch:before {
+  content: "\f1e8";
+}
+.dinerize-lastfm:before {
+  content: "\f202";
+}
+.dinerize-forumbee:before {
+  content: "\f211";
+}
+.dinerize-sellsy:before {
+  content: "\f213";
+}
+.dinerize-shirtsinbulk:before {
+  content: "\f214";
+}
+.dinerize-skyatlas:before {
+  content: "\f216";
+}
+.dinerize-whatsapp:before {
+  content: "\f232";
+}
+.dinerize-get-pocket:before {
+  content: "\f265";
+}
+.dinerize-snapchat:before {
+  content: "\f2ac";
+}
+.dinerize-telegram:before {
+  content: "\f2c6";
+}
+.dinerize-arrow-down:before {
+  content: "\e900";
+}
+.dinerize-arrow-left:before {
+  content: "\e901";
+}
+.dinerize-arrow-right:before {
+  content: "\e902";
+}
+.dinerize-arrow-up:before {
+  content: "\e903";
+}
+.dinerize-check:before {
+  content: "\e904";
+}
+.dinerize-chevron-down:before {
+  content: "\e905";
+}
+.dinerize-chevron-left:before {
+  content: "\e906";
+}
+.dinerize-chevron-right:before {
+  content: "\e907";
+}
+.dinerize-chevron-up:before {
+  content: "\e908";
+}
+.dinerize-clock:before {
+  content: "\e909";
+}
+.dinerize-eye:before {
+  content: "\e90a";
+}
+.dinerize-grid:before {
+  content: "\e90b";
+}
+.dinerize-heart:before {
+  content: "\e90c";
+}
+.dinerize-home:before {
+  content: "\e90d";
+}
+.dinerize-mail:before {
+  content: "\e90e";
+}
+.dinerize-map-pin:before {
+  content: "\e90f";
+}
+.dinerize-paperclip:before {
+  content: "\e910";
+}
+.dinerize-phone:before {
+  content: "\e911";
+}
+.dinerize-search:before {
+  content: "\e912";
+}
+.dinerize-settings:before {
+  content: "\e913";
+}
+.dinerize-shopping-bag:before {
+  content: "\e914";
+}
+.dinerize-smartphone:before {
+  content: "\e915";
+}
+.dinerize-user:before {
+  content: "\e916";
+}
+.dinerize-close:before {
+  content: "\e917";
+}

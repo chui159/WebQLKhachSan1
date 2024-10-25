@@ -1,0 +1,40 @@
+/*-------------------------------------------------------*/
+/* Page 404
+/*-------------------------------------------------------*/
+.page-404 {
+	&-section {
+		padding: 10% 0;
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&__number,
+	&__title,
+	&__text {
+		color: #fff;
+	}
+
+	&__number {
+		font-size: 6rem;
+		margin-bottom: 0;
+	}
+
+	&__title {
+		font-size: 2rem;
+	}
+
+	&__text {
+		font-size: 1.125rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include bp-md-up {
+		&__title {
+			font-size: 3rem;
+		}
+	}
+}

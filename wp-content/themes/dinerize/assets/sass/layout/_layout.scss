@@ -1,0 +1,192 @@
+/*-------------------------------------------------------*/
+/* Main Wrapper
+/*-------------------------------------------------------*/
+.main-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  min-width: 0;
+}
+
+/* GDPR Checkbox
+-------------------------------------------------------*/
+.deo-newsletter-gdpr-checkbox {
+  margin-top: 16px;
+
+  &__label {
+    @include display-flex;
+    font-family: $body-font;
+    color: $text-color;
+    font-size: 0.875rem !important;
+    text-align: left;
+    margin-bottom: 0;
+
+    @include bp-xl-up {
+      justify-content: center;
+    }
+  }
+}
+
+/*-------------------------------------------------------*/
+/* Page Title
+/*-------------------------------------------------------*/
+.page-title {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  padding: 60px 0;
+  background-color: $bg-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  .container {
+    height: 100%;
+  }
+
+  &__outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+
+  &__inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__holder {
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    font-size: 2.375rem;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+
+  &__description {
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+  }
+}
+
+/* Breadcrumbs
+-------------------------------------------------------*/
+.breadcrumbs {
+  font-size: 0.9375rem;
+  margin-top: 10px;
+
+  .trail-browse,
+  .trail-items,
+  .trail-items li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: 0 0;
+    text-indent: 0;
+  }
+
+  .trail-items li::after {
+    content: "\e907";
+  }
+
+  .trail-items li::after,
+  .trail-items li::before {
+    font-family: "dinerize-icons";
+    font-size: 0.9375rem;
+    padding: 0 0.5em;
+    vertical-align: middle;
+  }
+
+  .page-title__title + & {
+    margin-top: 8px;
+  }
+
+  .page-title.bg-overlay &,
+  .page-title.bg-overlay & a {
+    color: #fff;
+  }
+}
+
+.rtl {
+  .trail-items li::after {
+    display: none;
+  }
+
+  .trail-items li::before {
+    content: "\e906";
+  }
+}
+
+.trail-items li:last-of-type::after,
+.trail-items li:last-of-type::before {
+  display: none;
+}
+
+/* Cookies notication bar
+-------------------------------------------------------*/
+.cc-container {
+  padding: 0;
+
+  @include bp-md-up {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.cc-window.cc-banner {
+  background-color: $bg-dark;
+}
+
+.cc-message {
+  margin-right: 20px;
+  flex: 0 1 auto !important;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+
+  @include bp-md-down {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+}
+
+.cc-link {
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.cc-link,
+.cc-link:active,
+.cc-link:visited {
+  color: #fff;
+}
+
+a.cc-btn.cc-dismiss {
+  font-size: 0.8125rem !important;
+  background-color: var(--dinery-main-color);
+  height: 28px;
+  line-height: 28px;
+  padding: 0 14px;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  min-width: auto !important;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+}

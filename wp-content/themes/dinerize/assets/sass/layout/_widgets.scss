@@ -1,0 +1,526 @@
+/*-------------------------------------------------------*/
+/* Widgets
+/*-------------------------------------------------------*/
+.widget {
+  .footer & {
+    margin-bottom: 40px;
+  }
+
+  .sidebar &,
+  .elementor-widget-sidebar & {
+    margin-bottom: 54px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  &.widget_block h2,
+  .wp-block-search__label,
+  &-title {
+    font-size: 1.3125rem;
+    margin-bottom: 22px;
+  }
+}
+
+.widget {
+  .sub-menu,
+  .children {
+    padding-top: 10px;
+    padding-left: 10px;
+
+    li:first-child {
+      border-top: 1px solid $border-color;
+      padding-top: 10px;
+    }
+  }
+}
+
+.menu-item {
+  list-style: none;
+}
+
+/* Widget Search
+-------------------------------------------------------*/
+.widget_search .envisionx-search-input {
+  margin-bottom: 0;
+}
+
+.widget-search-button,
+.search-form__button,
+.envisionx-search-form .envisionx-search-button,
+.woocommerce-product-search button[type="submit"] {
+  position: absolute;
+  top: 0;
+  height: 56px;
+  width: 56px;
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: 0;
+  right: 0;
+  font-size: 17px;
+  vertical-align: middle;
+}
+
+// Block search
+.wp-block-search {
+  &__inside-wrapper {
+    position: relative;
+    display: flex;
+    flex: auto;
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
+
+  &__button {
+    margin-left: 10px;
+    word-break: normal;
+  }
+
+  .wp-block-search__input {
+    padding: 16px;
+    background-color: transparent;
+    border: 1px solid $border-color;
+    margin-bottom: 0;
+
+    &:focus {
+      background-color: transparent;
+      border-color: var(--dinery-main-color);
+    }
+  }
+
+  .wp-block-search__label {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: none;
+  }
+
+  .wp-block-search__button {
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    svg {
+      fill: currentColor;
+    }
+
+    &.has-icon {
+      border: 0;
+      padding: 11px;
+      flex-shrink: 0;
+      min-height: 56px;
+      width: 56px;
+      border-radius: 4px;
+
+      &:focus,
+      &:hover {
+        box-shadow: none;
+        color: #fff;
+      }
+    }
+
+    &:not(.has-icon) {
+      font-size: 0.875rem;
+
+      &:hover,
+      &:focus {
+        background-color: $heading-color;
+      }
+    }
+  }
+
+  &.wp-block-search__button-inside {
+    .wp-block-search__inside-wrapper {
+      padding: 0;
+      border: 0;
+      border: 0;
+    }
+
+    .wp-block-search__button.has-icon {
+      position: absolute;
+      right: 0;
+      background-color: transparent;
+      color: $heading-color;
+    }
+  }
+}
+
+/* Widget Categories, Recent Entries, Comments, Archives, Meta
+----------------------------------------------------------------*/
+.elementor-widget-wp-widget-recent-posts a,
+.widget_recent_entries a,
+.elementor-widget-wp-widget-nav_menu a,
+.widget_nav_menu a,
+.elementor-widget-wp-widget-categories a,
+.widget_categories a,
+.elementor-widget-wp-widget-pages a,
+.widget_pages a,
+.elementor-widget-wp-widget-pages-archives a,
+.widget_archive a,
+.elementor-widget-wp-widget-meta a,
+.widget_meta a {
+  color: $text-color;
+
+  &:hover {
+    color: var(--dinery-main-color);
+  }
+}
+
+.elementor-widget-wp-widget-recent-comments a,
+.widget_recent_comments a {
+  color: $heading-color;
+
+  &:hover {
+    color: var(--dinery-main-color);
+  }
+}
+
+.elementor-widget-wp-widget-recent-posts li,
+.widget_recent_entries li,
+.elementor-widget-wp-widget-nav_menu li,
+.widget_nav_menu li,
+.elementor-widget-wp-widget-pages li,
+.widget_pages li,
+.elementor-widget-wp-widget-pages-archives li,
+.widget_archive li,
+.elementor-widget-wp-widget-meta li,
+.widget_meta li,
+.elementor-widget-wp-widget-recent-comments li,
+.widget_recent_comments li {
+  padding: 10px 0;
+  border-bottom: 1px solid $border-color;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+/* Categories
+-------------------------------------------------------*/
+.elementor-widget-wp-widget-categories li,
+.widget_categories li {
+  overflow: hidden;
+  padding: 2px 0;
+
+  &:first-child {
+    padding-top: 0 !important;
+    border-top: 0 !important;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  a {
+    position: relative;
+    font-size: 1.125rem;
+    font-family: $heading-font;
+  }
+}
+
+/* Recent Comments / Recent Posts
+-------------------------------------------------------*/
+.recentcomments,
+.widget_recent_entries li {
+  position: relative;
+  padding-left: 20px !important;
+
+  &::before {
+    content: "\e907";
+    font-family: "dinerize-icons";
+    display: block;
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+  }
+}
+
+/* Widget RSS
+-------------------------------------------------------*/
+.widget_rss {
+  li {
+    padding: 16px 0;
+    border-bottom: 1px solid $border-color;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .rsswidget {
+    color: $heading-color;
+
+    &:hover {
+      color: var(--dinery-main-color);
+    }
+  }
+
+  .rss-date {
+    display: block;
+    color: $meta-color;
+    font-size: 0.875rem;
+    margin: 6px 0 12px;
+  }
+
+  .rssSummary {
+    margin-bottom: 8px;
+
+    & + cite {
+      font-size: 15px;
+      color: $meta-color;
+    }
+  }
+
+  .widget-title .rsswidget:last-child {
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: 2px;
+    display: inline-block;
+  }
+}
+
+/* Widgets select (Categories, Archives, Text Widget)
+-------------------------------------------------------*/
+.widget_categories,
+.widget_archive,
+.widget_text {
+  select {
+    margin-bottom: 0;
+  }
+}
+
+/* Widget Calendar
+-------------------------------------------------------*/
+.calendar_wrap {
+  table {
+    width: 100%;
+  }
+
+  th,
+  td,
+  span {
+    display: table-cell;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1;
+    padding: 2.5% 2.5% 2% 2.5%;
+    text-align: center;
+  }
+
+  caption {
+    caption-side: top;
+    text-align: center;
+    background-color: $bg-light;
+    padding: 2% 2.5%;
+    margin-bottom: 0;
+    border: 1px solid $border-color;
+    border-bottom: 0;
+    font-weight: 600;
+  }
+
+  .pad {
+    background: none;
+  }
+
+  .wp-calendar-nav {
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      flex: 1;
+    }
+  }
+
+  tfoot #prev,
+  .wp-calendar-nav-prev {
+    text-align: left;
+  }
+
+  tfoot #next,
+  .wp-calendar-nav-next {
+    text-align: right;
+  }
+}
+
+/* Widget Popular Posts
+-------------------------------------------------------*/
+.widget-popular-posts {
+  &__first-post {
+    .widget-popular-posts__img-holder {
+      width: 100%;
+      float: none;
+
+      margin-bottom: 24px !important;
+      margin-left: 0 !important;
+    }
+
+    .widget-popular-posts__entry-title {
+      font-size: 1.375rem;
+    }
+  }
+
+  &__list > li {
+    padding: 12px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__img-holder {
+    width: 68px;
+    float: left;
+    position: relative;
+    margin-right: 16px !important;
+    overflow: hidden;
+
+    @include bp-lg-down {
+      width: 50px;
+    }
+  }
+
+  &__entry {
+    min-height: 60px;
+    overflow: hidden;
+  }
+
+  &__entry-title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+
+    a {
+      color: $heading-color;
+    }
+
+    a:hover {
+      color: var(--dinery-main-color);
+    }
+  }
+}
+
+/* Widget Search
+-------------------------------------------------------*/
+.search-input {
+  margin-bottom: 0;
+  border: 0;
+  height: 56px;
+  background-color: $bg-light;
+}
+
+.widget-search-button,
+.search-form__button,
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: $text-color;
+  border: 0;
+  font-size: 1.25rem;
+  vertical-align: middle;
+  border-radius: 0;
+
+  &:focus {
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+.search-form {
+  position: relative;
+}
+
+/* Widget Tags / Entry Tags
+-------------------------------------------------------*/
+.widget_tag_cloud a,
+.entry__tags a {
+  line-height: 1;
+  margin: 0 8px 8px 0;
+  padding: 8px 12px;
+  font-size: 0.875rem !important;
+  font-family: $heading-font;
+  text-transform: uppercase;
+  background-color: $bg-light;
+  color: $text-color;
+  display: inline-block;
+  float: left;
+  @include transition(all 0.1s ease-in-out);
+
+  &:hover {
+    background-color: var(--dinery-main-color);
+    border-color: transparent;
+    color: #fff;
+  }
+}
+
+.tagcloud {
+  overflow: hidden;
+}
+
+/* Widget Mailchimp
+-------------------------------------------------------*/
+.elementor-widget-sidebar,
+.sidebar,
+.footer {
+  .deo-field-type-input {
+    margin-bottom: 16px;
+  }
+
+  .newsletter-subtitle {
+    margin-top: -12px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Widget Instagram Feed
+-------------------------------------------------------*/
+.instagram-feed {
+  position: relative;
+
+  #sb_instagram #sbi_images {
+    margin-top: 34px;
+  }
+
+  #sbi_load {
+    margin-top: 24px;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  &--wide {
+    #sbi_load {
+      margin-top: 0;
+    }
+
+    #sb_instagram .sb_instagram_header {
+      display: flex;
+      justify-content: center;
+    }
+
+    #sb_instagram .sb_instagram_header .sbi_header_text {
+      float: none;
+    }
+
+    #sb_instagram .sb_instagram_header .sbi_header_text.sbi_no_bio h3 {
+      padding-top: 15px !important;
+    }
+  }
+}

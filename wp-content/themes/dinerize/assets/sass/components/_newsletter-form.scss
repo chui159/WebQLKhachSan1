@@ -1,0 +1,82 @@
+/*-------------------------------------------------------*/
+/* Newsletter
+/*-------------------------------------------------------*/
+.deo-mailchimp-newsletter {
+  .mc4wp-form-fields {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.deo-field-group {
+  flex-wrap: wrap;
+  align-items: center;
+
+  input {
+    margin-bottom: 0;
+  }
+}
+
+
+.newsletter {
+  padding: 110px 0;
+  @include background-img-cover();
+
+  &__form {
+    width: 100%;
+
+    @include bp-md-up {
+      max-width: 80%
+    }    
+  }
+
+  &__subtitle,
+  &__title {
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 2.375rem;
+  }
+
+  &__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 44px;
+  }
+
+  &__form,
+  &__input,
+  &__submit {
+    display: inline-block;
+  }
+
+  .deo-field-type-input,
+  .deo-field-type-submit {
+    flex-basis: 100%;
+  }
+
+  .deo-field-type-input {
+    margin-bottom: 10px;
+  }
+
+  @include bp-sm-up {
+    .deo-field-type-input {
+      margin-right: 15px;
+      margin-bottom: 0;
+      flex: 2 0 0;
+    }
+
+    .deo-field-type-submit {
+      flex: 1 0 0;
+    }
+  }  
+
+  .deo-field-type-submit input {
+
+    @include bp-md-down {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+}

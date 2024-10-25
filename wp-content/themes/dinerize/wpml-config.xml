@@ -1,0 +1,13 @@
+<wpml-config>
+  <admin-texts>
+    <key name="theme_mods_dinerize">
+      <key name="dinerize_settings_footer_bottom_text"/>
+      <key name="dinerize_settings_cookies_message"/>
+      <key name="dinerize_settings_cookies_button"/>
+      <key name="dinerize_settings_cookies_learn_more_text"/>
+      <key name="dinerize_settings_page_404_title"/>
+      <key name="dinerize_settings_page_404_description"/>
+      <key name="dinerize_settings_page_404_button_text"/>
+    </key>
+  </admin-texts>
+</wpml-config>
